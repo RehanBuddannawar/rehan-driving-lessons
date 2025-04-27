@@ -1,3 +1,6 @@
+import { AvatarNav } from "./AvatarNav";
+import BasketItem from "./basket-item";
+import NotifyBtn from "./NotifyBtn";
 import SideBarDrawer from "./SideBarDrawer";
 
 const Header = async () => {
@@ -11,7 +14,12 @@ const Header = async () => {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="flex items-center space-x-3 md:space-x-6">right</div>
+
+        <div className="flex items-center space-x-3 md:space-x-6">
+            <AvatarNav />
+            <NotifyBtn />
+            <BasketItem />
+        </div>
         </div>
         </nav>
         </header>
